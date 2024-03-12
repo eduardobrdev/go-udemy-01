@@ -1,6 +1,9 @@
 package main
 
 // package == project == workspace
+// Dividi-se em dois tipos de arquivo: pacotes executáveis (obrigatoriamente package main) e pacotes reutilizáveis (Ex package calculator) define um pacote que será usado como dependência (helper code)
+
+// Lista de pacotes -> https://pkg.go.dev/std
 
 // https://pkg.go.dev/fmt -> Pacote fmt
 // Descrição -> Package fmt implements formatted I/O with functions analogous to C's printf and scanf. The format 'verbs' are derived from C's but are simpler.
