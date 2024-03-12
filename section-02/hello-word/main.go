@@ -1,5 +1,7 @@
 package main
 
+// package == project == workspace
+
 // https://pkg.go.dev/fmt -> Pacote fmt
 // Descrição -> Package fmt implements formatted I/O with functions analogous to C's printf and scanf. The format 'verbs' are derived from C's but are simpler.
 import "fmt"
