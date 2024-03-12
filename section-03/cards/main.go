@@ -18,15 +18,16 @@ func main() {
 	//card = 12 A reatribuição tem que ser obrigatoriamente do mesmo tipo
 
 	//Array e Slice
-	cards := []string{"Ace of Diamonds", newCard()}
+	cards := deck{"Ace of Diamonds", newCard()} // tipo deck declarado no arquivo deck.go, no mesmo package main
 	fmt.Println(cards)
 	cards = append(cards, "Six of Spades") // mesmo comportamento de um array_push
 	fmt.Println(cards)
 
 	// range -> semelhante a um foreach onde i é o indice e o card(pode ser qualquer nome) é o value
-	for i, card := range cards {
-		fmt.Println("index:", i, "value:", card)
-	}
+	cards.print() // Executa a mesma coisa que o for abaixo. A lógica está no arquivo deck.go
+	// for i, card := range cards {
+	// 	fmt.Println("index:", i, "value:", card)
+	// }
 
 	card := newCard()
 	fmt.Println(card)
