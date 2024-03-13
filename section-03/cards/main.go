@@ -33,7 +33,10 @@ func main() {
 	//fmt.Println(card)
 
 	cards := newDeck()
-	cards.print()
+	// A função deal irá separar os 5 primeiros cards da mão do jogador, do restante das cartas
+	hand, remainingCards := deal(cards, 5)
+	hand.print()
+	remainingCards.print()
 
 	//teste := []string{"t1","t2","t3","t4","t5","t6","t7","t8","t9","t10"}
 	//fmt.Println(teste[0]) -> t1

@@ -14,8 +14,12 @@ type deck []string
 // Output: Index: 0 Value: teste1 \n Index: 1 Value: teste2
 func (d deck) print() {
 	for i, card := range d {
-		fmt.Println("Index:", i, "Value:", card)
+		fmt.Println(i, card)
 	}
+}
+
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:]
 }
 
 func newDeck() deck {
