@@ -1,5 +1,7 @@
 package main
 
+//import "fmt"
+
 // Fora da func é possível criar variáveis assim:
 var teste string     // é obrigatório tipar
 const teste2 int = 2 // const obrigatoriamente precisa ser atribuída. Não é obrigatório tipar
@@ -32,6 +34,13 @@ func main() {
 
 	cards := newDeck()
 	cards.print()
+
+	//teste := []string{"t1","t2","t3","t4","t5","t6","t7","t8","t9","t10"}
+	//fmt.Println(teste[0]) -> t1
+	//fmt.Println(teste[0:2]) -> [t1 t2] -> seleciona do indice 0 ao indice 2 EXCLUINDO o indice 2
+	//fmt.Println(teste[:4]) -> [t1 t2 t3 t4] -> o mesmo que 0:4
+	//fmt.Println(teste[5:]) -> [t6 t7 t8 t9 t10] -> seleciona do indice 5 ao último indice, INCLUINDO o indice 5
+	//fmt.Println(teste[3:6]) -> [t4 t5 t6] -> seleciona do indice 3 ao indice 6, INCLUINDO o indice 3 e EXCLUINDO o indice 6
 
 }
 
