@@ -17,3 +17,18 @@ func (d deck) print() {
 		fmt.Println("Index:", i, "Value:", card)
 	}
 }
+
+func newDeck() deck {
+	cards := deck{}
+	cardSuits := []string{"Spades", "Diamonds", "Hearts", "Clubs"}
+	cardValues := []string{"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"}
+	// Sabemos que o range retorna o indice e o valor do array, neste exemplo como não será utilizado o indice, podemos passar _
+	// para que o programa não reclame de variável não utilizada
+	for _, suit := range cardSuits {
+		for _, value := range cardValues {
+			cards = append(cards, value+" of "+suit)
+		}
+	}
+
+	return cards
+}
